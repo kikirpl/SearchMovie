@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="w-screen text-center">
+      <h1 class="font-bold text-4xl">Qys_Movie.com</h1>
+      <p class="text-lg">Cari film yang kamu inginkan</p>
+      <input id="user-input" class="border rounded text-lg" type="text" />
+      <button
+        onclick="searchMovies()"
+        id="search-button"
+        class="border rounded text-lg px-2 bg-slate-600 hover:bg-slate-800 text-white"
+      >
+        Cari
+      </button>
+    </section>
+    <section id="movie-list" class="flex justify-center flex-wrap w-4/5 m-auto">
+      <!-- <div class="border text-center mx-2">
+        <img class="w-[120px] h-[150px]" src="" alt="" />
+        <h3 class="font-semibold">Ini judul</h3>
+      </div> -->
+    </section>
+    <div
+      id="modal-container"
+      onclick="hilang()"
+      style="display: none; background-color: rgb(0, 0, 0, 0.5)"
+      class="fixed justify-center items-center top-0 left-0 w-screen h-screen hover:cursor-pointer"
+    >
+      <!-- detail film -->
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
